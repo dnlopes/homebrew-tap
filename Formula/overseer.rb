@@ -5,21 +5,21 @@
 class Overseer < Formula
   desc "Overseer - A terminal UI application"
   homepage "https://github.com/dnlopes/overseer"
-  version "1.1.2"
+  version "1.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dnlopes/overseer/releases/download/v1.1.2/overseer_1.1.2_darwin_amd64.tar.gz"
-      sha256 "09ede762059152be30de3d688c5e0b40868a6e8de96522f5aea7d02cabc21137"
+      url "https://github.com/dnlopes/overseer/releases/download/v1.1.3/overseer_1.1.3_darwin_amd64.tar.gz"
+      sha256 "7066153bfaa0103561925212d4070bb2ac261531ce38426c6ef77d78b5b01da1"
 
       define_method(:install) do
         bin.install "overseer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dnlopes/overseer/releases/download/v1.1.2/overseer_1.1.2_darwin_arm64.tar.gz"
-      sha256 "4fb9f82530d27f432cb23d27dd164c6d265c6021127587b97c1efc4dabd1f287"
+      url "https://github.com/dnlopes/overseer/releases/download/v1.1.3/overseer_1.1.3_darwin_arm64.tar.gz"
+      sha256 "58ab5fb42a2c1af7990e14005e156a5b6189998379dcf94f50a4ae2f2dd7b4f6"
 
       define_method(:install) do
         bin.install "overseer"
@@ -29,15 +29,15 @@ class Overseer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnlopes/overseer/releases/download/v1.1.2/overseer_1.1.2_linux_amd64.tar.gz"
-      sha256 "293aa08feff2446291f524927d73a3270034ffd700d2ff2a1efd05e46a3bc331"
+      url "https://github.com/dnlopes/overseer/releases/download/v1.1.3/overseer_1.1.3_linux_amd64.tar.gz"
+      sha256 "4d35343c8878b8da06d03a3741ebac625844b4fb4e3d747ba3497ba151de437e"
       define_method(:install) do
         bin.install "overseer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dnlopes/overseer/releases/download/v1.1.2/overseer_1.1.2_linux_arm64.tar.gz"
-      sha256 "571baadf26211373d30651e9276d6bc4e4f13fba7dafb03f0abf78bb71119443"
+      url "https://github.com/dnlopes/overseer/releases/download/v1.1.3/overseer_1.1.3_linux_arm64.tar.gz"
+      sha256 "94a2e465aa71333fc443f9faa8b3d7b79ae901591f65b62d8d7e4d0d93c64b43"
       define_method(:install) do
         bin.install "overseer"
       end
